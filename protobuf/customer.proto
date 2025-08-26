@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+
+package customer;
+
+
+option go_package = "generate/customer-service/grpc/protos";
+
+
+service CustomerService  { 
+    rpc VerifyToken(VerifyTokenRequest) returns (VerifyTokenResponse);
+    rpc GetInfo(VerifyTokenRequest) returns (GetInfoResponse);
+}
+
+message  GetInfoResponse { 
+  uint64 id = 1;
+  string username = 2;
+  string phone = 3;
+  string email = 4;
+}
+
+message VerifyTokenRequest { 
+    string token = 1;
+}
+
+message VerifyTokenResponse { 
+    bool valid = 1;
+}

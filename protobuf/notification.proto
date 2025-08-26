@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+
+
+package notification;
+
+option go_package = "generate/notification-service/grpc/proto";
+
+// --- Messages ---
+message DeliveryInfo {
+  string delivery_id = 1;
+  string customer_id = 2;
+  string driver_id = 3;
+  string address = 4;
+  string status = 5; // pending, assigned, picked_up, delivered, canceled
+}
+
+message NotificationRequest {
+  string user_id = 1;
+  string title = 2;
+  string body = 3;
+}
+
+message NotificationResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+service NotificationService { 
+    // Notify drivers/admins when a new delivery is available
+    rpc NewDelivery(DeliveryInfo) returns (NotificationResponse);
+
+    // Notify admin that a driver accepted a delivery
+    rpc DriverAccepted(DeliveryInfo) returns (NotificationResponse);
+
+    // Notify driver that delivery has been assigned
+    rpc DeliveryAssigned(DeliveryInfo) returns (NotificationResponse);
+
+    // Notify customer/admin about delivery status updates
+    rpc DeliveryStatusUpdate(DeliveryInfo) returns (NotificationResponse);
+
+    // Generic notification sender
+    rpc SendNotification(NotificationRequest) returns (NotificationResponse);
+}
