@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package admin;
 
-option go_package = "generate/admin-service/grpc/protos";
+option go_package = "admin-service/grpc/protos";
 
 // Admin service for authentication and management
 service AdminService {

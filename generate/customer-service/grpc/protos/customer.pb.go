@@ -193,7 +193,7 @@ const file_customer_proto_rawDesc = "" +
 	"\x05valid\x18\x01 \x01(\bR\x05valid2\xa1\x01\n" +
 	"\x0fCustomerService\x12J\n" +
 	"\vVerifyToken\x12\x1c.customer.VerifyTokenRequest\x1a\x1d.customer.VerifyTokenResponse\x12B\n" +
-	"\aGetInfo\x12\x1c.customer.VerifyTokenRequest\x1a\x19.customer.GetInfoResponseB'Z%generate/customer-service/grpc/protosb\x06proto3"
+	"\aGetInfo\x12\x1c.customer.VerifyTokenRequest\x1a\x19.customer.GetInfoResponseB\x1eZ\x1ccustomer-service/grpc/protosb\x06proto3"
 
 var (
 	file_customer_proto_rawDescOnce sync.Once

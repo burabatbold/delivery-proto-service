@@ -25,7 +25,7 @@ var File_delivery_proto protoreflect.FileDescriptor
 const file_delivery_proto_rawDesc = "" +
 	"\n" +
 	"\x0edelivery.proto\x12\bdelivery2\x11\n" +
-	"\x0fDeliveryServiceB&Z$generate/delivery-service/grpc/protob\x06proto3"
+	"\x0fDeliveryServiceB\x1dZ\x1bdelivery-service/grpc/protob\x06proto3"
 
 var file_delivery_proto_goTypes = []any{}
 var file_delivery_proto_depIdxs = []int32{

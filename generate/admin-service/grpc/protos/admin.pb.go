@@ -402,7 +402,7 @@ const file_admin_proto_rawDesc = "" +
 	"updated_at\x18\x06 \x01(\tR\tupdatedAt2\x88\x01\n" +
 	"\fAdminService\x122\n" +
 	"\x05Login\x12\x13.admin.LoginRequest\x1a\x14.admin.LoginResponse\x12D\n" +
-	"\vVerifyToken\x12\x19.admin.VerifyTokenRequest\x1a\x1a.admin.VerifyTokenResponseB$Z\"generate/admin-service/grpc/protosb\x06proto3"
+	"\vVerifyToken\x12\x19.admin.VerifyTokenRequest\x1a\x1a.admin.VerifyTokenResponseB\x1bZ\x19admin-service/grpc/protosb\x06proto3"
 
 var (
 	file_admin_proto_rawDescOnce sync.Once

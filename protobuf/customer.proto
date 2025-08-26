@@ -4,7 +4,7 @@ syntax = "proto3";
 package customer;
 
 
-option go_package = "generate/customer-service/grpc/protos";
+option go_package = "customer-service/grpc/protos";
 
 
 service CustomerService  { 

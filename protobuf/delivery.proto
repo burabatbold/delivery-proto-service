@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package delivery;
 
-option go_package = "generate/delivery-service/grpc/proto";
+option go_package = "delivery-service/grpc/proto";
 
 
 

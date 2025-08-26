@@ -235,7 +235,7 @@ const file_notification_proto_rawDesc = "" +
 	"\x0eDriverAccepted\x12\x1a.notification.DeliveryInfo\x1a\".notification.NotificationResponse\x12R\n" +
 	"\x10DeliveryAssigned\x12\x1a.notification.DeliveryInfo\x1a\".notification.NotificationResponse\x12V\n" +
 	"\x14DeliveryStatusUpdate\x12\x1a.notification.DeliveryInfo\x1a\".notification.NotificationResponse\x12Y\n" +
-	"\x10SendNotification\x12!.notification.NotificationRequest\x1a\".notification.NotificationResponseB*Z(generate/notification-service/grpc/protob\x06proto3"
+	"\x10SendNotification\x12!.notification.NotificationRequest\x1a\".notification.NotificationResponseB!Z\x1fnotification-service/grpc/protob\x06proto3"
 
 var (
 	file_notification_proto_rawDescOnce sync.Once

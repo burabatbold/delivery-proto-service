@@ -4,7 +4,7 @@ syntax = "proto3";
 
 package notification;
 
-option go_package = "generate/notification-service/grpc/proto";
+option go_package = "notification-service/grpc/proto";
 
 // --- Messages ---
 message DeliveryInfo {
